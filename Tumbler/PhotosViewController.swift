@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class PhotosViewController: UIViewController {
 
@@ -29,6 +30,8 @@ class PhotosViewController: UIViewController {
           let responseDictionary = dataDictionary["response"] as! [String: Any]
           self.posts = responseDictionary["posts"] as! [[String: Any]]
           
+            
+          tableView.reloadData()
           print(self.posts)
         }
       }
@@ -45,7 +48,21 @@ extension PhotosViewController: UITableViewDataSource {
     
     let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
     let post = posts[indexPath.row]
-    let photos = ["photos"] as? [String]
+    let photos = ["photos"] as? [[String:Any]]
+    
+    let photo = photos[0]
+    
+    let originalSize = photo["original_size"] as! [String:Any]
+    
+    let urlString = originalSize["url"] as! String
+    
+    let url = URL(string: urlString)
+    
+    cell.posterView.af_setImage(withURL: url!)
+    
+    
+    
+    
     return cell
   }
 }
