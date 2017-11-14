@@ -23,18 +23,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="219" id="M72-SC-BtJ" customClass="PhotoCell" customModule="Tumbler" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="219"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="365" id="M72-SC-BtJ" customClass="PhotoCell" customModule="Tumbler" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="365"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M72-SC-BtJ" id="rJq-4m-x6W">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="218.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="364.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BSl-LL-Ce1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="229"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BSl-LL-Ce1">
+                                                    <rect key="frame" x="0.0" y="135.5" width="375" height="229"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="229" id="3ZD-sn-edF"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BSl-LL-Ce1" firstAttribute="leading" secondItem="rJq-4m-x6W" secondAttribute="leading" id="21I-LM-NBt"/>
+                                                <constraint firstAttribute="trailing" secondItem="BSl-LL-Ce1" secondAttribute="trailing" id="Jmd-hT-jkr"/>
+                                                <constraint firstAttribute="bottom" secondItem="BSl-LL-Ce1" secondAttribute="bottom" id="r9P-0Q-dSI"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="posterView" destination="BSl-LL-Ce1" id="PuF-yx-XZs"/>
@@ -52,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h2E-0w-h15" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-234.40000000000001" y="-14.842578710644679"/>
+            <point key="canvasLocation" x="-626.39999999999998" y="-114.69265367316342"/>
         </scene>
     </scenes>
 </document>

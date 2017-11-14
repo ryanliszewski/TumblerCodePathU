@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import Alamofire
 
 class PhotoCell: UITableViewCell {
 
   @IBOutlet weak var posterView: UIImageView!
   
+  override func awakeFromNib() {
+    
+  }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

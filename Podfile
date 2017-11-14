@@ -7,7 +7,7 @@ target 'Tumbler' do
 
   # Pods for Tumbler
 
-  pod 'AlamofireImage', '~> 3.1'
+  pod 'AlamofireImage', '~> 3.3’
 
   target 'TumblerTests' do
     inherit! :search_paths
