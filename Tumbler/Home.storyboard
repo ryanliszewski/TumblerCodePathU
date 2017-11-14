@@ -23,15 +23,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="365" id="M72-SC-BtJ" customClass="PhotoCell" customModule="Tumbler" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="365"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="200" id="M72-SC-BtJ" customClass="PhotoCell" customModule="Tumbler" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M72-SC-BtJ" id="rJq-4m-x6W">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="364.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BSl-LL-Ce1">
-                                                    <rect key="frame" x="0.0" y="135.5" width="375" height="229"/>
+                                                    <rect key="frame" x="0.0" y="-29.5" width="375" height="229"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="229" id="3ZD-sn-edF"/>
                                                     </constraints>

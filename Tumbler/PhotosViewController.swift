@@ -11,8 +11,15 @@ import AlamofireImage
 
 class PhotosViewController: UIViewController {
 
-  var posts: [[String: Any]] = []
   @IBOutlet weak var tableView: UITableView!
+  
+  var posts: [[String: Any]] = [] {
+    didSet {
+      DispatchQueue.main.async {
+        self.tableView.reloadData()
+      }
+    }
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -41,7 +48,6 @@ extension PhotosViewController {
         let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
         let responseDictionary = dataDictionary["response"] as! [String: Any]
         self.posts = responseDictionary["posts"] as! [[String: Any]]
-        self.tableView.reloadData()
       }
     }
     task.resume()
@@ -68,5 +74,3 @@ extension PhotosViewController: UITableViewDataSource {
     return cell
   }
 }
-
-
