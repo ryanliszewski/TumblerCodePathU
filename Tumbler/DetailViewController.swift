@@ -13,11 +13,11 @@ class DetailViewController: UIViewController {
   
   
   @IBOutlet weak var posterImageView: UIImageView!
-  var imageURL: URL?
+  var image: UIImage!
   override func viewDidLoad() {
         super.viewDidLoad()
 
-    posterImageView.af_setImage(withURL: imageURL!)
+    posterImageView.image = image 
         // Do any additional setup after loading the view.
     }
 

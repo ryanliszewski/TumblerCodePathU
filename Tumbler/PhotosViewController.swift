@@ -87,16 +87,7 @@ extension PhotosViewController {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     let detailViewController = segue.destination as! DetailViewController
     
-    let cell = sender as! UITableViewCell
-    let indexPath = tableView.indexPath(for: cell)
-    
-    let post = posts[indexPath!.row]
-    let photos = post["photos"] as? [[String: Any]]
-    
-    let photo = photos![0]
-    let originalSize = photo["original_size"] as! [String:Any]
-    let urlString = originalSize["url"] as! String
-    let url = URL(string: urlString)
-    detailViewController.imageURL = url
+    let cell = sender as! PhotoCell
+    detailViewController.image = cell.posterView.image
   }
 }
