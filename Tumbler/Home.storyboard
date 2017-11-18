@@ -39,6 +39,48 @@
             </objects>
             <point key="canvasLocation" x="391.19999999999999" y="-187.55622188905548"/>
         </scene>
+        <!--Full Screen Photo View Controller-->
+        <scene sceneID="TR3-eJ-V98">
+            <objects>
+                <viewController storyboardIdentifier="FullScreenPhotoViewController" id="M0y-36-NbG" customClass="FullScreenPhotoViewController" customModule="Tumbler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WKU-PU-At1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="Feo-ZY-2AT">
+                                <rect key="frame" x="-12" y="8" width="387" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="22I-1O-pEH">
+                                        <rect key="frame" x="19" y="50" width="349" height="566"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAC-fj-lDW">
+                                        <rect key="frame" x="29" y="68" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Close" backgroundImage="black">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.0083553898399999996" green="0.0094703249339999993" blue="0.008000768678" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onCloseTap:" destination="M0y-36-NbG" eventType="touchUpInside" id="egY-Wp-a2Q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HFg-aD-qdY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fullScreenImageView" destination="22I-1O-pEH" id="cP2-zm-PYp"/>
+                        <outlet property="mainScrollView" destination="Feo-ZY-2AT" id="pHJ-jy-FBq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7BI-mt-Sve" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1277.5999999999999" y="-188.45577211394306"/>
+        </scene>
         <!--Photos View Controller-->
         <scene sceneID="Yu3-kB-7tF">
             <objects>
@@ -114,4 +156,7 @@
             <point key="canvasLocation" x="-1073" y="-188"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="black" width="16" height="16"/>
+    </resources>
 </document>
