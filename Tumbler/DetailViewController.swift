@@ -13,7 +13,9 @@ class DetailViewController: UIViewController {
   
   
   @IBOutlet weak var posterImageView: UIImageView!
+    
   var image: UIImage!
+    
   override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,8 +40,13 @@ class DetailViewController: UIViewController {
         // User tapped at the point above. Do something with that if you want.
         print ("ImageView: tapped once")
         
+        let mainStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        let fullScreenViewController =  mainStoryboard.instantiateViewController(withIdentifier: "FullScreenPhotoViewController") as! FullScreenPhotoViewController
+        
+        fullScreenViewController.fullScreenImage = self.image
+        
         /* trigger segue manually */
-        self.performSegue(withIdentifier: "toFullScreenImageSegue", sender: nil)
+        present(fullScreenViewController, animated: true, completion: nil)
     }
 
     /*

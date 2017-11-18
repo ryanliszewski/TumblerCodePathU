@@ -9,11 +9,26 @@
 import UIKit
 
 class FullScreenPhotoViewController: UIViewController {
+    
+    var fullScreenImage: UIImage!
+    
+    @IBOutlet weak var fullScreenImageView: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.fullScreenImageView.image = self.fullScreenImage
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        print ("Came here")
+        print (self.fullScreenImage)
+        self.fullScreenImageView.image = self.fullScreenImage
     }
 
     override func didReceiveMemoryWarning() {
