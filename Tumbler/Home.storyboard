@@ -59,16 +59,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BSl-LL-Ce1">
-                                                    <rect key="frame" x="0.0" y="-29.5" width="375" height="229"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="229" id="3ZD-sn-edF"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="BSl-LL-Ce1" firstAttribute="leading" secondItem="rJq-4m-x6W" secondAttribute="leading" id="21I-LM-NBt"/>
-                                                <constraint firstAttribute="trailing" secondItem="BSl-LL-Ce1" secondAttribute="trailing" id="Jmd-hT-jkr"/>
-                                                <constraint firstAttribute="bottom" secondItem="BSl-LL-Ce1" secondAttribute="bottom" id="r9P-0Q-dSI"/>
+                                                <constraint firstItem="BSl-LL-Ce1" firstAttribute="leading" secondItem="rJq-4m-x6W" secondAttribute="leading" id="CmS-Q4-Oqq"/>
+                                                <constraint firstAttribute="trailing" secondItem="BSl-LL-Ce1" secondAttribute="trailing" id="dbI-gg-WYg"/>
+                                                <constraint firstAttribute="bottom" secondItem="BSl-LL-Ce1" secondAttribute="bottom" id="i9S-Sn-KhA"/>
+                                                <constraint firstItem="BSl-LL-Ce1" firstAttribute="top" secondItem="rJq-4m-x6W" secondAttribute="top" id="mqO-mt-RG7"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -81,10 +79,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cOb-VI-BmR" firstAttribute="leading" secondItem="jPU-gf-TqV" secondAttribute="leading" id="8UA-HX-KL3"/>
-                            <constraint firstItem="cOb-VI-BmR" firstAttribute="bottom" secondItem="jPU-gf-TqV" secondAttribute="bottom" id="Rfb-Rs-UHw"/>
-                            <constraint firstItem="cOb-VI-BmR" firstAttribute="top" secondItem="CXK-Gv-G4O" secondAttribute="top" id="gm5-x5-NW7"/>
-                            <constraint firstItem="cOb-VI-BmR" firstAttribute="trailing" secondItem="jPU-gf-TqV" secondAttribute="trailing" id="ieY-b8-rsT"/>
+                            <constraint firstItem="cOb-VI-BmR" firstAttribute="trailing" secondItem="jPU-gf-TqV" secondAttribute="trailing" id="JkY-aT-i3I"/>
+                            <constraint firstItem="cOb-VI-BmR" firstAttribute="leading" secondItem="jPU-gf-TqV" secondAttribute="leading" id="KNe-AL-tt4"/>
+                            <constraint firstItem="cOb-VI-BmR" firstAttribute="bottom" secondItem="jPU-gf-TqV" secondAttribute="bottom" id="OMe-lf-5Bb"/>
+                            <constraint firstItem="cOb-VI-BmR" firstAttribute="top" secondItem="CXK-Gv-G4O" secondAttribute="top" id="aAG-lY-JB9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jPU-gf-TqV"/>
                     </view>
