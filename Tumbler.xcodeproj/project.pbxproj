@@ -16,6 +16,7 @@
 		73EAE84D1FB78B7E005B5581 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EAE84C1FB78B7E005B5581 /* PhotosViewController.swift */; };
 		73EAE84F1FB78BA1005B5581 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73EAE84E1FB78BA1005B5581 /* Home.storyboard */; };
 		73EAE8511FB78E5E005B5581 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EAE8501FB78E5E005B5581 /* PhotoCell.swift */; };
+		73F562611FC0CC5D0040FC4E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F562601FC0CC5D0040FC4E /* DetailViewController.swift */; };
 		AC5608DB26E5AFD1DEE21CB5 /* Pods_Tumbler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7876710088BE920B599A4AE /* Pods_Tumbler.framework */; };
 		D72992ADF17306B12F1E17CC /* Pods_TumblerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5772898F8E8CE1C76D3C284E /* Pods_TumblerTests.framework */; };
 		FD25BA04364BE1D980E72440 /* Pods_TumblerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E2457975FA0E613A129E78 /* Pods_TumblerUITests.framework */; };
@@ -61,6 +62,7 @@
 		73EAE84C1FB78B7E005B5581 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		73EAE84E1FB78BA1005B5581 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		73EAE8501FB78E5E005B5581 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		73F562601FC0CC5D0040FC4E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9F5E5A2CD6FDFC4EDBB5BAFA /* Pods-TumblerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TumblerTests/Pods-TumblerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7876710088BE920B599A4AE /* Pods_Tumbler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tumbler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,6 +151,7 @@
 				73EAE84C1FB78B7E005B5581 /* PhotosViewController.swift */,
 				73EAE84E1FB78BA1005B5581 /* Home.storyboard */,
 				73EAE8501FB78E5E005B5581 /* PhotoCell.swift */,
+				73F562601FC0CC5D0040FC4E /* DetailViewController.swift */,
 			);
 			path = Tumbler;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 			files = (
 				73EAE8511FB78E5E005B5581 /* PhotoCell.swift in Sources */,
 				731E89E41FB78A5D000C51BA /* Tumbler.xcdatamodeld in Sources */,
+				73F562611FC0CC5D0040FC4E /* DetailViewController.swift in Sources */,
 				73EAE84D1FB78B7E005B5581 /* PhotosViewController.swift in Sources */,
 				731E89DC1FB78A5D000C51BA /* AppDelegate.swift in Sources */,
 			);

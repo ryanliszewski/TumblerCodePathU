@@ -74,3 +74,29 @@ extension PhotosViewController: UITableViewDataSource {
     return cell
   }
 }
+
+//MARK: - UITableViewDelegate
+extension PhotosViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+  }
+}
+
+//MARK: - Navigation
+extension PhotosViewController {
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let detailViewController = segue.destination as! DetailViewController
+    
+    let cell = sender as! UITableViewCell
+    let indexPath = tableView.indexPath(for: cell)
+    
+    let post = posts[indexPath!.row]
+    let photos = post["photos"] as? [[String: Any]]
+    
+    let photo = photos![0]
+    let originalSize = photo["original_size"] as! [String:Any]
+    let urlString = originalSize["url"] as! String
+    let url = URL(string: urlString)
+    detailViewController.imageURL = url
+  }
+}
