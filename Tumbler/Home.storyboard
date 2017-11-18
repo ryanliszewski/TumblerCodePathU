@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cOb-VI-BmR">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cOb-VI-BmR">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="200" id="M72-SC-BtJ" customClass="PhotoCell" customModule="Tumbler" customModuleProvider="target">
@@ -51,6 +50,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cOb-VI-BmR" firstAttribute="leading" secondItem="jPU-gf-TqV" secondAttribute="leading" id="8UA-HX-KL3"/>
+                            <constraint firstItem="cOb-VI-BmR" firstAttribute="bottom" secondItem="jPU-gf-TqV" secondAttribute="bottom" id="Rfb-Rs-UHw"/>
+                            <constraint firstItem="cOb-VI-BmR" firstAttribute="top" secondItem="CXK-Gv-G4O" secondAttribute="top" id="gm5-x5-NW7"/>
+                            <constraint firstItem="cOb-VI-BmR" firstAttribute="trailing" secondItem="jPU-gf-TqV" secondAttribute="trailing" id="ieY-b8-rsT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jPU-gf-TqV"/>
                     </view>
                     <connections>
