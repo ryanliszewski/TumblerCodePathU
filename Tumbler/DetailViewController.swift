@@ -38,11 +38,12 @@ class DetailViewController: UIViewController {
     @objc func didTap(sender: UITapGestureRecognizer) {
         let location = sender.location(in: view)
         // User tapped at the point above. Do something with that if you want.
-        print ("ImageView: tapped once")
-        
+
+        /* get the uiviewcontroller we want to show */
         let mainStoryboard = UIStoryboard(name: "Home", bundle: nil)
         let fullScreenViewController =  mainStoryboard.instantiateViewController(withIdentifier: "FullScreenPhotoViewController") as! FullScreenPhotoViewController
         
+        /* set the image */
         fullScreenViewController.fullScreenImage = self.image
         
         /* trigger segue manually */
